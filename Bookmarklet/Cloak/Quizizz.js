@@ -1,0 +1,1 @@
+javascript:(function() { setInterval(function() { var link = document.querySelector('link[rel*="icon"]') || document.createElement('link'); link.type = 'image/x-icon'; link.rel = 'shortcut icon'; link.href = 'https://cf.quizizz.com/img/favicon/favicon.ico'; document.getElementsByTagName('head')[0].appendChild(link); document.title = 'Quizizz';}, 1000); })();
