@@ -1,0 +1,1 @@
+javascript:(function() { setInterval(function() { var link = document.querySelector('link[rel*="icon"]') || document.createElement('link'); link.type = 'image/x-icon'; link.rel = 'shortcut icon'; link.href = 'https://ssl.gstatic.com/docs/presentations/images/favicon5.ico'; document.getElementsByTagName('head')[0].appendChild(link); document.title = 'Google Slides';}, 1000); })();
