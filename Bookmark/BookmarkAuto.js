@@ -1,4 +1,4 @@
-var scriptURL = "https://themysteryperson.github.io/Bookmark/Bookmarklet";
+var scriptURL = "https://themysteryperson.github.io/Bookmark/Bookmarklet.js";
 
 
 if (window.jQuery) { 
