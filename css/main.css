@@ -5,14 +5,30 @@ p {
   color: gray;
 }
 body {
-  background-color: rgb(30,30,30);
+  background-color: rgb(30, 30, 30);
 }
 h4 {
-    color:gray;
+  color: gray;
 }
 a {
-    color:purple;
-    font-size: 20px;
+  color: purple;
+  font-size: 20px;
 }
-
-
+#Games {
+  position: relative;
+  left: 160px;
+  top: -90px;
+  font-size: 27px;
+}
+#Unblock {
+  position: relative;
+  left: 245px;
+  top: -121px;
+  font-size: 27px;
+}
+#Contact {
+  position: relative;
+  left: 383px;
+  top: -152px;
+  font-size: 27px;
+}
