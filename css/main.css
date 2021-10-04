@@ -32,3 +32,15 @@ a {
   top: -152px;
   font-size: 27px;
 }
+#bigpic {
+  height: 1200px;
+  width: 1800px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -400px;
+  z-index: -1;
+}
+.front {
+  z-index: 1;
+}
