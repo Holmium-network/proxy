@@ -56,6 +56,7 @@ clear: both;
 .logo {
   float: left;
   padding: 10px;
+  width: 155px;
 }
 nav {
   float: right;
@@ -94,4 +95,9 @@ nav a::before{
 
 nav a:hover::before{
   width: 100%;
+}
+.bottom {
+  position: relative;
+  left: 0%;
+  top: 600px;
 }
