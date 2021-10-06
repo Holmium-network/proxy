@@ -1,1 +1,0 @@
-No Content: https://shsgames.github.io//built-games/cookieclicker/showads.js
