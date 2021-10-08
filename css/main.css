@@ -46,7 +46,7 @@ width: 90%;
 margin: 0 auto;
 }
 header {
-  background-image: src="/images/BWD_Wallpaper.png";
+  background-image: url("BWD_Wallpaper.png");
   background: rgb(37, 36, 34);
 }
 header::after {
