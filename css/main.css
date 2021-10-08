@@ -5,7 +5,7 @@ p {
   color: gray;
 }
 body {
-  background-image: url('./images/BWD_Wallpaper.png');
+  background-image: url(BWD_Wallpaper.png) no-repeat center center fixed;
   background-color: rgb(30, 30, 30);
 }
 h4 {
