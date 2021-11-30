@@ -1,9 +1,7 @@
 {
-    "port": 8443,
-    "ssl": false,
-    "title": "Degeneracy",
-    "prefix": "/go/",
-    "codec": "xor",
-    "blacklist": ["accounts.google.com"],
-    "smokeprefix": "/web/"
-} 
+    "port": "8080",
+    "lite": "false",
+    "auth": "false",
+    "username": "user",
+    "password": "secret"
+}

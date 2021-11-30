@@ -1,115 +1,232 @@
-# Degeneracy
-Degeneracy is a functional and easy to use proxy site made to combat web filters such as iboss, Securly, Goguardian, and more!
+<div align="center">
 
-<a href="https://heroku.com/deploy?template=https://github.com/Degenerate0001/Degeneracy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/heroku2.svg"><img></a>
-<a href="https://repl.it/github/Degenerate0001/Degeneracy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
-<a href="https://glitch.com/edit/#!/import/github/Degenerate0001/Degeneracy"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/glitch2.svg"><img></a>
+<kbd>
+<img style="border-radius:50%" height="150px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/public/img/logo.svg">
+</kbd>
 
-# Setup
+<h1>Tsunami</h1>
+
+<h3>An official Fog Network proxy site, made to access the blocked web</h3>
+
+<p>Surf without web filters or restrictions. Made with style, Tsunami is a rather fancy service dedicated to protecting your freedom from censorship.
+Read the documentation below to find out more</p>
+
+<p>Want to improve Tsunami? <a href="https://github.com/FogNetwork/Tsunami/compare">Create a pull request</a></p>
+</div>
+
+<p align="center">
+<a href="https://heroku.com/deploy?template=https://github.com/FogNetwork/Tsunami"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/heroku2.svg"><img></a>
+<a href="https://repl.it/github/FogNetwork/Tsunami"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
+<a href="https://glitch.com/edit/#!/import/github/FogNetwork/Tsunami"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/glitch2.svg"><img></a>
+</p>
+
+## Documentation
+
+- [Overview](#overview)
+  - [Supported Sites](#supported-sites)
+  - [Features](#features)
+  - [Pages](#pages)
+- [Setup](#setup)
+  - [Locally](#locally)
+  - [Deploy](#deploy)
+  - [Proxies](#proxies)
+  - [Configuration](#configuration)
+- [Support](#support)
+  - [FAQ](#faq)
+  - [Contact](#contact)
+- [More](#more)
+  - [Proxy Sources](#proxy-sources)
+  - [Credits](#credits)
+  - [Contributing](#contributing)
+
+## Overview
+
+### Supported Sites
+
+- google.com
+- discord.com
+- youtube.com
+- invidio.us
+- reddit.com
+- wolframalpha.com
+- 1v1.lol
+- schoolcheats.net?
+
+### Features
+
+- All the best proxies
+- Nice game library
+- Tab cloaking and other cool features
+- Basic auth
+- Customizable CSS
+- Installable PWA
+- Build in youtube downloader
+
+## Pages
+
+- `/` Homepage
+- `/1` Arcade
+- `/2` Chatbox
+- `/3` Settings
+- `/4` Terms
+- `/5` Privacy
+- `/6` Documentation
+- `/7` Credits
+- `/8` Support and Contact
+- `/9` Youtube
+- `/404` 404 Error
+
+## Setup
+
+**Please Note: Womginx and PyDodge will not work without deploying are hosted on subdomains, see [proxies](#proxies) for more info**
+
+### Locally
 
 ```sh
-git clone https://github.com/Degenerate0001/Degeneracy
-cd Degeneracy
+git clone https://github.com/FogNetwork/Tsunami
+
+cd Tsunami
+
 npm install
+
 npm start
 ```
 
-# Configuration
+### Deploy
 
-Configure Degeneracy in `config.json`.
+Click one of the buttons above and follow the steps
 
-Default Config Example:
+### Proxies
+
+Some of the proxies on Tsunami are hosted on subdomains, deploy the correct proxy for Tsunami to work
+
+Palladium and Corrosion are hosted locally, so you don't need a subdomain
+
+[w.example.com (Womginx)](https://github.com/binary-person/womginx)
+
+[p.example.com (PyDodge)](https://github.com/BinBashBanana/PyDodge)
+
+[Locally (Palladium)](https://github.com/FogNetwork/Palladium)
+
+[Locally (Corrosion)](https://github.com/titaniumnetwork-dev/Corrosion)
+
+### Configuration
+
+**config.json**
 
 ```json
 {
-    "port": 8443,
-    "ssl": false,
-    "title": "Degeneracy",
-    "prefix": "/go/",
-    "codec": "xor",
-    "blacklist": ["accounts.google.com"],
-    "smokeprefix": "/web/"
-} 
-```
-* Port: The port you want Degeneracy to listen on.
-* SSl: Set to true if you would like to use HTTPS (recommended for VPS)
-* Title: the title you want your tabs to be for Corrosion. (Does not affect icon)
-* Prefix: The prefix you want for Corrosion. (recomended that you keep it the same)
-* Codec: Basic encryption method for filter evasion in Corrosion. (Options include `xor`, `base64`, or `plain`. xor or base64 are recommended)
-* Blacklist: Sites that you want to block with Corrosion.
-* Smokeprefix: Prefix for smoke. (recommended that you keep it the same)
-
-**Note: For a VPS, it is highly recommended that you remove `forceHttps: true` from `start.js` if you are hosting on a VPS. It is only useful for Heroku and just breaks things without Heroku.**
-
-# Persistance With PM2
-
-I have listed PM2 as a method for persistance as it is easy to work with, and it offers server monitoring.
-
-To get started, run the following commands:
-
-```sh
-npm i pm2 -g
-pm2 start start.js
-pm2 startup
-pm2 save
-```
-Run the first command outside of the `Degeneracy` directory if you want to use PM2 for anything else.
-
-# Nginx
-
-Set up Nginx to Serve Degeneracy and Obtain Letsencrypt Certificates using Certbot.
-
-Run the following commands to install Nginx and Certbot (skip this step if you already have both installed):
-
-```
-apt install -y nginx python3 python3-venv libaugeas0
-python3 -m venv /opt/certbot/
-/opt/certbot/bin/pip install --upgrade pip
-/opt/certbot/bin/pip install certbot certbot-nginx
-ln -s /opt/certbot/bin/certbot /usr/bin/certbot
-```
-
-Note: each line above is a separate command.
-
-Next, create the following file in `/etc/nginx/sites-enabled/degeneracy`.
-
-```nginx
-server {
-    root /var/www/path/to/webroot;
-    server_name your.domain.com;
-    location / {
-        proxy_set_header Accept-Encoding "";
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-Host $host:$server_port;
-        proxy_set_header X-Forwarded-Server $host;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "Upgrade";   
-        proxy_pass https://127.0.0.1:8443;  # change to http if ssl is set to false
-        proxy_http_version 1.1; 
-        proxy_set_header Host $host;
-    }
-    
-    #location / { #uncomment if you would like to block Google and some other bots.
-       #if ($http_user_agent ~ (Googlebot|damnbot|spider) ) {
-           #return 403;
-    #}
-
-    listen 80;
+    "port": "8080",
+    "lite": "false",
+    "auth": "false",
+    "username": "user",
+    "password": "secret"
 }
 ```
 
-## Letsencrypt 
+`"port": "8080"` Changes the port 
 
-Run these commands to get certificates for your site. Certbot will make this easy!
+`"lite": "false"` Hides Womginx and PyDodge, set to true or false 
 
+`"auth": "false"` Basic authentication, set to true or false
+
+`"username"` Username for authentication
+
+`"password"` Password for authentication
+
+**/public/js/go.js**
+
+```js
+var palladiumproxy = window.location.protocol + "//" + window.location.hostname + "/palladium/gateway?url="
+
+var corrosionproxy = window.location.protocol + "//" + window.location.hostname + "/corrosion/gateway?url="
+
+var womginxproxy = window.location.protocol + "//" + "w." + window.location.hostname + "/main/"
+
+var pydodgeproxy = window.location.protocol + "//" + "p." + window.location.hostname + "/course/"
 ```
-certbot --nginx -d <insert your domain here>
-systemctl restart nginx
+`palladiumproxy` Location for Palladium proxy
+
+`corrosionproxy` Location for Corrosion proxy
+
+`womginx` Location for Womginx proxy
+
+`pydodgeproxy` Location for PyDodge proxy
+
+Custom Proxy Example:
+
+```js
+var palladiumproxy = "https://example.com/palladium/"
 ```
 
-Now check and see if your server is running! If it is, then good job, if it isn't, sorry D:
+## Support
 
-# To Do
+### FAQ
 
-* Fix Tab Cloaking
+**How can I get new domains?**
+
+Join our [discord](https://discord.gg/yk33HZSZkU) for more Tsunami links
+
+**Captcha not working/issues**
+
+Captcha is only supported on Womginx, though the support is limited
+
+**Why is Discord not working properly?**
+
+Try using Womginx or Corrosion. Refreshing the page might help
+
+### Contact
+
+Nebelung - [Nebelung#1335](https://discord.com/users/887118260963782686)
+
+## More
+
+### Proxy Sources
+
+[Palladium](https://github.com/FogNetwork/Palladium)
+
+[Corrosion](https://github.com/titaniumnetwork-dev/Corrosion)
+
+[Modified Corrosion](https://github.com/BinBashBanana/Corrosion-Heroku)
+
+[Womginx](https://github.com/binary-person/womginx)
+
+[PyDodge](https://github.com/BinBashBanana/PyDodge)
+
+[Alloy](https://github.com/titaniumnetwork-dev/alloy) (Not Used)
+
+[SystemYA](https://github.com/sysce/proxy) (Not Used)
+
+[Via](https://github.com/hypothesis/via) (Not Used)
+
+[Node Unblocker](https://github.com/nfriedly/node-unblocker) (Not Used)
+
+[Powermouse](https://github.com/titaniumnetwork-dev/powermouse) (Not Used)
+
+### Credits
+
+[Nebelung](https://github.com/Nebelung-Dev) - Owner and Main Developer
+
+[EnderKingJ](https://github.com/EnderKingJ) - Proxy Developer
+
+[Quite A Fancy Emerald](https://github.com/QuiteAFancyEmerald) - Holy Unblocker King
+
+[Caracal.js](https://github.com/caracal-js) - Proxy Developer
+
+[MikeLime](https://github.com/MikeLime-dev) - Developer
+
+[BinBashBanana](https://github.com/BinBashBanana) - Game Library and PyDodge 
+
+[Binary Person](https://github.com/binary-person) - Creator of Womginx
+
+[Divide](https://github.com/vibedivide) - SystemYA and Chatbox Creator
+
+[Shirt](https://github.com/shirt-dev) - Proxy Developer
+
+[Karlee Rae](https://github.com/KarleeRae) - MinecraftJS
+
+### Contributing
+
+See [CONTRIBUTING.md](https://github.com/FogNetwork/Tsunami/blob/main/CONTRIBUTING.md)
+
+Special Thanks Quite A Fancy Emerald, Inspiration for Tsunami
