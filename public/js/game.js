@@ -50,7 +50,7 @@ function fullgame() {
 }
 
 async function fetchgames() {
-let response = await fetch("../games/games.json")
+let response = await fetch("../public/games/games.json")
 let json = await response.json()
 
 for (game in json) {
