@@ -32,7 +32,7 @@ function setfavicon(icon) {
   document.querySelector("link[rel='shortcut icon']").href = icon;
   } else {
   localStorage.removeItem("favicon")
-  document.querySelector("link[rel='shortcut icon']").href = "/img/logo.svg";
+  document.querySelector("link[rel='shortcut icon']").href = "/public/img/logo.svg";
   }
 }
 
@@ -105,6 +105,6 @@ window.addEventListener('load', function() {
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('../sw.js');
+             .register('../public/sw.js');
   }
 })
