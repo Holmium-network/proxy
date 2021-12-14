@@ -74,6 +74,11 @@
         "image": "/public/games/images/gopher-kart.png",
         "location": "/public/games/files/gopher-kart"
     },
+        {
+        "title": "Happy Wheels",
+        "image": "/public/games/images/Happy-Wheels.png",
+        "location": "https://games-online.io/game/HappyWheels/"
+    },
     {
         "title": "Hextris",
         "image": "/public/games/images/hextris.png",
