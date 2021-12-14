@@ -97,7 +97,7 @@
         {
         "title": "Retro Bowl",
         "image": "/public/games/images/RetroBowl.png",
-        "location": "/public/games/files/RetroBowl"
+        "location": "/public/games/files/RetroBowl/index.html"
     },
     {
         "title": "Space Invaders",
