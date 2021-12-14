@@ -94,6 +94,11 @@
         "image": "/public/games/images/pacman.jpg",
         "location": "/public/games/files/pacman"
     },
+        {
+        "title": "Retro Bowl",
+        "image": "/public/games/images/RetroBowl.png",
+        "location": "/public/games/files/RetroBowl"
+    },
     {
         "title": "Space Invaders",
         "image": "/public/games/images/space-invaders.png",
