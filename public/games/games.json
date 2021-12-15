@@ -44,10 +44,15 @@
         "image": "/public/games/images/algaes-escapade.png",
         "location": "/public/games/files/algaes-escapade"
     },
-        {
+    {
         "title": "Csgo Cliker",
         "image": "/public/games/images/csgo.png",
         "location": "/public/games/files/Csgo-Clicker"
+    },
+    {
+        "title": "Couch 2048",
+        "image": "/public/games/images/couch2048.png",
+        "location": "/public/games/files/Couch-2048"
     },
     {
         "title": "Flappy Bird",
