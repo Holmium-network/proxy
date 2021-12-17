@@ -104,6 +104,11 @@
         "image": "/public/games/images/RetroBowl.png",
         "location": "/public/games/files/RetroBowl/index.html"
     },
+        {
+        "title": "Slope",
+        "image": "/public/games/images/slope4.jpeg",
+        "location": "/public/games/files/slope"
+    },
     {
         "title": "Space Invaders",
         "image": "/public/games/images/space-invaders.png",
