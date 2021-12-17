@@ -5,7 +5,8 @@
     <script src="ipad.js"></script>
     <script src="game.js"></script>
     <style>
-      #canvas { border:1px solid black; top:0px; left:0px; }
+	  body {background-color: #000;}
+      #canvas { border:1px solid black; top:0px; left:0px; background-color: #fff;}
       .button { position:absolute; border:1px solid black; }
       #left-controls { position:absolute; left:1px; bottom:0px; display:none; }
       #right-controls { position:absolute; right:1px; bottom:0px; display:none; }
@@ -15,8 +16,8 @@
       #space { width:200px; height:200px; bottom:0px; right:0px; }
     </style>
   </head>
-  <body style="background-color: white;">
-    <div id="game-container">
+  <body>
+    <div id="game-container" align="center">
       <canvas id="canvas" width="780" height="540"></canvas>
       <div id="left-controls">
         <div id="up" class='button'>THRUST</div>
