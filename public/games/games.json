@@ -55,6 +55,11 @@
         "location": "/public/games/files/Couch-2048"
     },
     {
+        "title": "Cookie Clicker",
+        "image": "/public/games/files/cookieclicker/img/goldcookie.png",
+        "location": "/public/games/files/cookiecliker"
+    },
+    {
         "title": "Flappy Bird",
         "image": "/public/games/images/flappy-bird.png",
         "location": "/public/games/files/flappy-bird"
@@ -158,6 +163,11 @@
         "title": "Cubefield",
         "image": "/public/games/images/cubefield.jpeg",
         "location": "/public/games/files/flash?swf=cubefield.swf"
+    },
+    {
+        "title": "",
+        "image": "/public/games/images/name.png",
+        "location": "/public/games/files/name"
     },
     {
         "title": "Retro - Coming Soon!",
